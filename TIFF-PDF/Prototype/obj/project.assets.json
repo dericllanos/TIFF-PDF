@@ -1212,11 +1212,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Predator\\Desktop\\repoTektar1\\TIFF-PDF\\Prototype\\TIFFToPDFViewer.csproj",
+      "projectUniqueName": "C:\\Users\\Predator\\Desktop\\repoWPF\\TIFF-PDF\\Prototype\\TIFFToPDFViewer.csproj",
       "projectName": "TIFFToPDFViewer",
-      "projectPath": "C:\\Users\\Predator\\Desktop\\repoTektar1\\TIFF-PDF\\Prototype\\TIFFToPDFViewer.csproj",
+      "projectPath": "C:\\Users\\Predator\\Desktop\\repoWPF\\TIFF-PDF\\Prototype\\TIFFToPDFViewer.csproj",
       "packagesPath": "C:\\Users\\Predator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Predator\\Desktop\\repoTektar1\\TIFF-PDF\\Prototype\\obj\\",
+      "outputPath": "C:\\Users\\Predator\\Desktop\\repoWPF\\TIFF-PDF\\Prototype\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

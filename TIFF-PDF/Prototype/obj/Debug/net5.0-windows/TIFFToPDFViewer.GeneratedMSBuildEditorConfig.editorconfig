@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = TIFFToPDFViewer
-build_property.ProjectDir = C:\Users\Predator\Desktop\repoTektar1\TIFF-PDF\Prototype\
+build_property.ProjectDir = C:\Users\Predator\Desktop\repoWPF\TIFF-PDF\Prototype\

@@ -189,7 +189,7 @@ namespace Prototype2 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TIFFToPDFViewer;component/add.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TIFFToPDFViewer;V1.0.0.0;component/add.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Add.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

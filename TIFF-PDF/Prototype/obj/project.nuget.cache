@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vr+X2OYVBG+3Q0aS8g7t1d42QpGuH+8Lteq0DNp32F3UCsk1jPspZGxxFEM3nRR5tcdWGC09E97E1c1kYTaH9g==",
+  "dgSpecHash": "dCQQc13v6P/HAy6/Go/lWuAgFU9UTX73/ObuZVvbnIgtbUk1/K4P76xYIiTVgrt4e3HICH/5f/qEfOZGE5OzKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Predator\\Desktop\\repoTektar1\\TIFF-PDF\\Prototype\\TIFFToPDFViewer.csproj",
+  "projectFilePath": "C:\\Users\\Predator\\Desktop\\repoWPF\\TIFF-PDF\\Prototype\\TIFFToPDFViewer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Predator\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
     "C:\\Users\\Predator\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
