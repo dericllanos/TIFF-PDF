@@ -1,0 +1,68 @@
+﻿<Window x:Class="Prototype2.Editing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:Prototype2"
+        mc:Ignorable="d"
+        Title="Editing Window" Height="445" Width="635" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" SizeToContent="Manual" Loaded="Window_Loaded" Background="#FFE2DFDC">
+
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="582*"/>
+            <ColumnDefinition Width="147*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="File Path" Margin="14,12,74,10" Grid.ColumnSpan="2" FontWeight="Bold">
+            <Grid Height="306">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="131*"/>
+                    <RowDefinition Height="22*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="24*"/>
+                    <ColumnDefinition Width="181*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Client Name:" HorizontalAlignment="Left" Margin="11,7,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="Normal"/>
+                <TextBox x:Name="txt_cname" IsEnabled="False" HorizontalAlignment="Left" Margin="16,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Grid.ColumnSpan="2" FontWeight="Normal"/>
+                <Label Content="Client Key:" HorizontalAlignment="Left" Margin="96,7,0,0" VerticalAlignment="Top" Grid.Column="1" FontWeight="Normal"/>
+                <TextBox x:Name="txt_ckey" HorizontalAlignment="Left" Margin="101,33,0,0" IsEnabled="False" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Grid.Column="1" FontWeight="Normal"/>
+                <Label Content="Client Type:" HorizontalAlignment="Left" Margin="228,7,0,0" VerticalAlignment="Top" Grid.Column="1" FontWeight="Normal"/>
+                <TextBox x:Name="txt_ctype" HorizontalAlignment="Left" Margin="232,33,0,0" IsEnabled="False" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Grid.Column="1" FontWeight="Normal"/>
+                <Label Content="Description" HorizontalAlignment="Left" Margin="11,64,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="Normal"/>
+                <TextBox x:Name="txt_desc" HorizontalAlignment="Left" Margin="15,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" Height="75" Grid.ColumnSpan="2" FontWeight="Normal"/>
+                <Label Content="Document Type:" HorizontalAlignment="Left" Margin="228,180,0,0" VerticalAlignment="Top" Grid.Column="1" FontWeight="Normal"/>
+                <TextBox x:Name="txt_doctype" IsEnabled="False" HorizontalAlignment="Left" Margin="233,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Grid.Column="1" FontWeight="Normal"/>
+                <Label Content="Document ID:" HorizontalAlignment="Left" Margin="97,182,0,0" VerticalAlignment="Top" Grid.Column="1" FontWeight="Normal"/>
+                <TextBox x:Name="txt_docid" HorizontalAlignment="Left" Margin="101,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Grid.Column="1" KeyUp="txt_docid_KeyUp" FontWeight="Normal"/>
+                <Label Content="Scan Date:" HorizontalAlignment="Left" Margin="11,179,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="Normal"/>
+                <Label Content="File Location:" HorizontalAlignment="Left" Margin="11,240,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2" FontWeight="Normal"/>
+                <TextBox x:Name="txt_filepath" HorizontalAlignment="Left" IsEnabled="False" Margin="16,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="362" Height="20" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" Grid.Row="1" FontWeight="Normal">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.024"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+                <DatePicker x:Name="txt_scandate" IsEnabled="False" HorizontalAlignment="Left" Margin="11,205,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="23" DisplayDateEnd="{Binding Mode=OneWay, Source={x:Static
+                    sys:DateTime.Today}}" FontWeight="Normal">
+
+                </DatePicker>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Operations" Margin="377,12,6,10" Grid.Column="1" Grid.ColumnSpan="2" FontWeight="Bold">
+            <Grid Height="395">
+                <Button x:Name="btn_generate" Content="GENERATE " HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="155" Margin="0,118,0,0" Click="btn_generate_Click" FontSize="14" FontWeight="Normal"/>
+                <Button x:Name="btn_undo" Content="UNDO" HorizontalAlignment="Center" Margin="0,201,0,0" VerticalAlignment="Top" Height="46" Width="155" Click="btn_undo_Click" Visibility="Hidden"/>
+                <TextBox x:Name="txt_id" HorizontalAlignment="Center" Margin="0,21,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+                <Button x:Name="btn_cancel" Content="CANCEL" HorizontalAlignment="Center" VerticalAlignment="Center" Height="46" Width="155" Click="btn_cancel_Click" FontSize="14" FontWeight="Normal"/>
+                <Button x:Name="btn_done" Content="DONE" HorizontalAlignment="Center" Margin="0,233,0,0" VerticalAlignment="Top" Height="46" Width="155" Click="btn_done_Click" FontSize="14" FontWeight="Normal"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>

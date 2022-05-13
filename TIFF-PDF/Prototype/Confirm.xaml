@@ -1,0 +1,16 @@
+﻿<Window x:Class="Prototype2.Confirm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prototype2"
+        mc:Ignorable="d"
+        Title="Confirm" Height="123" Width="394" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" SizeToContent="Manual" Foreground="#FF020202" Background="White">
+    <Grid>
+        <Button x:Name="btn_yes" Content="YES" HorizontalAlignment="Left" Margin="16,0,0,0" VerticalAlignment="Center" Width="159" Height="38" FontSize="20" Click="btn_yes_Click"/>
+        <Button x:Name="btn_no" Content="NO" HorizontalAlignment="Left" Margin="197,0,0,0" VerticalAlignment="Center" Width="159" Height="38" FontSize="20" Click="btn_no_Click"/>
+        <TextBox x:Name="txt_id" HorizontalAlignment="Left" Margin="140,13,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+
+
+    </Grid>
+</Window>
